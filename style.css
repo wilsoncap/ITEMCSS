@@ -14,6 +14,7 @@ body {
   align-items: center;
   height: 60px;
   padding: 0 20px 0 20px;
+  background-color: #fff;
 }
 
 .nanvar .menu-item {
@@ -36,7 +37,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: black;
 }
 
 .loader {
