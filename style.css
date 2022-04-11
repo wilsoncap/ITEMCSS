@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.loader {
+  position: relative;
+  width: 250px;
+  height: 100px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loader .bar {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleY(0.01);
+  animation: animBar 1.2s ease-in-out infinite;
+}
+
+@keyframes animBar {
+  0%,
+  100% {
+    transform: scaleY(0.01);
+  }
+  50% {
+    transform: scaleY(1.5);
+  }
+}
+
+.loader .bar:nth-child(1),
+.loader .bar:nth-last-child(1) {
+  background: #754fa0;
+  animation-delay: 1.02s;
+}
+
+.loader .bar:nth-child(2),
+.loader .bar:nth-last-child(2) {
+  background: #09b7bf;
+  animation-delay: 0.85s;
+}
+
+.loader .bar:nth-child(3),
+.loader .bar:nth-last-child(3) {
+  background: #98d36b;
+  animation-delay: 0.65s;
+}
+
+.loader .bar:nth-child(4),
+.loader .bar:nth-last-child(4) {
+  background: #f2d40d;
+  animation-delay: 0.58s;
+}
+
+.loader .bar:nth-child(5),
+.loader .bar:nth-last-child(5) {
+  background: #fcb12b;
+  animation-delay: 0.35s;
+}
+
+.loader .bar:nth-child(6),
+.loader .bar:nth-last-child(6) {
+  background: #ed1b72;
+  animation-delay: 0.2s;
+}
