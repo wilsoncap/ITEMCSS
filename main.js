@@ -1,7 +1,9 @@
-addEventListener("resize", () => {
-  if (innerWidth > 600) {
-    document.body.style.background = "orange";
-  } else {
-    document.body.style.background = "lightgrey";
-  }
-});
+const mediumBp = matchMedia("(min-width: 600px)");
+const changeSize = (mql) => {
+  mql.matches
+    ? (document.body.style.background = "lightgrey")
+    : (document.body.style.background = "black");
+};
+
+mediumBp.addEventListener(changeSize);
+changeSize(mediumBp);
